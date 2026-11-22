@@ -896,10 +896,10 @@ body::after {
 .contato__links { display: grid; gap: 12px; }
 .canal {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   grid-template-areas:
-    "nome seta"
-    "endereco seta";
+    "icone nome seta"
+    "icone endereco seta";
   align-items: center;
   gap: 2px 16px;
   min-height: 88px;
@@ -913,6 +913,17 @@ body::after {
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 .canal:hover { border-color: var(--azul); background: var(--fundo-3); }
+.canal__icone {
+  grid-area: icone;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+.canal__icone svg { display: block; }
+.canal__icone--linkedin { background: #0a66c2; color: #fff; }
+.canal__icone--github { background: var(--texto); color: var(--fundo-2); }
 .canal__nome {
   grid-area: nome;
   font-family: var(--fonte-titulo);
