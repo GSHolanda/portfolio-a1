@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriel Silva Holanda · Desenvolvedor Front-End</title>
+  <meta name="description" content="Portfólio de Gabriel Silva Holanda, desenvolvedor front-end em Brasília. Interfaces responsivas e acessíveis, sites publicados e automações para rotinas de trabalho.">
+  <meta name="author" content="Gabriel Silva Holanda">
+  <meta name="theme-color" content="#15171c">
+  <link rel="canonical" href="https://gsholanda.github.io/portfolio-a1/">
+
+  <!-- Compartilhamento (Open Graph): URLs absolutas do GitHub Pages -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Gabriel Silva Holanda · Desenvolvedor Front-End">
+  <meta property="og:description" content="Interfaces responsivas e acessíveis, sites publicados e automações para rotinas de trabalho. Brasília, DF.">
+  <meta property="og:url" content="https://gsholanda.github.io/portfolio-a1/">
+  <meta property="og:image" content="https://gsholanda.github.io/portfolio-a1/imagens/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gabriel Silva Holanda, desenvolvedor front-end em Brasília">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Script pequeno e sem defer: marca a página como "com JavaScript" antes da pintura. -->
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho" data-menu="fechado">
+    <div class="container cabecalho__barra">
+      <a class="marca" href="#inicio" aria-label="Gabriel Holanda, voltar ao início">
+        <span class="marca__mono" aria-hidden="true">GH</span>
+        <span class="marca__nome" aria-hidden="true">Gabriel Holanda</span>
+      </a>
+
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu-botao__icone" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-botao__rotulo">Menu</span>
+      </button>
+
+      <nav class="menu" id="menu-principal" aria-label="Principal">
+        <ul class="menu__lista">
+          <li><a class="menu__link" href="#inicio">Início</a></li>
+          <li><a class="menu__link" href="#sobre">Sobre</a></li>
+          <li><a class="menu__link" href="#projetos">Projetos</a></li>
+          <li><a class="menu__link" href="#formacao">Formação</a></li>
+          <li><a class="menu__link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- ============ INÍCIO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <p class="rotulo">Portfólio · Brasília, DF</p>
+          <h1 class="hero__nome" id="titulo-inicio">Gabriel Silva Holanda</h1>
+          <p class="hero__cargo">Desenvolvedor Front-End</p>
+          <p class="hero__frase">Desenvolvo interfaces responsivas e acessíveis e crio automações que tiram o trabalho repetitivo da rotina das empresas.</p>
+          <div class="hero__acoes">
+            <a class="botao botao--primario" href="#projetos">Ver projetos</a>
+            <a class="botao botao--secundario" href="https://github.com/GSHolanda" target="_blank" rel="noopener noreferrer">
+              GitHub
+              <svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              <span class="sr-only">(abre em nova aba)</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="ficha" aria-labelledby="titulo-ficha" data-revelar>
+          <h2 class="ficha__titulo rotulo" id="titulo-ficha">Em números</h2>
+          <dl class="ficha__lista">
+            <div class="ficha__item">
+              <dt class="ficha__valor">15+</dt>
+              <dd>bancos lidos pelo programa de extratos que idealizei na Contelb</dd>
+            </div>
+            <div class="ficha__item">
+              <dt class="ficha__valor">28 <span aria-hidden="true">→</span><span class="sr-only">para</span> 60 fps</dt>
+              <dd>no site do Instituto Joãosinho Trinta, em hardware simulado de baixo desempenho</dd>
+            </div>
+            <div class="ficha__item">
+              <dt class="ficha__valor">94</dt>
+              <dd>testes de interface no front-end do LabTrack</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="secao sobre" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="container sobre__grade">
+        <div class="sobre__texto" data-revelar>
+          <p class="rotulo">Sobre mim</p>
+          <h2 class="titulo-secao" id="titulo-sobre">Interface boa resolve o problema de alguém. Eu gosto de medir se resolveu.</h2>
+          <p>Sou de Brasília e curso Ciência da Computação na UDF. No dia a dia trabalho com React e TypeScript, HTML, CSS e JavaScript, integro interfaces a APIs REST e escrevo automações em Python quando uma tarefa se repete demais.</p>
+          <p>Na Contelb, escritório de contabilidade em Brasília, meu trabalho parte da rotina do departamento contábil. Idealizei um programa para Windows que lê extratos de mais de 15 bancos, gera planilhas Excel conferidas e apoia a conciliação no sistema Domínio. Na troca de sistema do escritório, automatizei em Python a migração dos balancetes. Também projetei o site e o blog novos, pensados para quem procura contabilidade na cidade.</p>
+          <p>Na Index Participações, desenvolvi o site do Instituto Joãosinho Trinta: cinco páginas com uma narrativa que acompanha a rolagem. Para a página continuar leve em computadores simples, comprimi imagens, usei <code>content-visibility</code> e criei um modo de desempenho adaptativo. A animação foi de cerca de 28 para 60 quadros por segundo em hardware simulado de baixo desempenho.</p>
+          <p>Nas duas empresas, cada site ou programa nasceu de uma necessidade concreta: um escritório que precisava ser encontrado por clientes da cidade, uma equipe que precisava conciliar extratos de muitos bancos, um instituto que queria contar sua história sem deixar o site pesado.</p>
+        </div>
+
+        <div class="sobre__lateral" data-revelar>
+          <h3 class="rotulo">Experiência</h3>
+          <ol class="trajetoria">
+            <li class="trajetoria__item">
+              <p class="trajetoria__periodo">ago. 2026 até hoje · remoto</p>
+              <p class="trajetoria__cargo">Estagiário de Automação e Desenvolvimento</p>
+              <p class="trajetoria__empresa">Contelb Contabilidade</p>
+            </li>
+            <li class="trajetoria__item">
+              <p class="trajetoria__periodo">set. 2026 a nov. 2026</p>
+              <p class="trajetoria__cargo">Estagiário de Desenvolvimento Web</p>
+              <p class="trajetoria__empresa">Index Participações</p>
+            </li>
+          </ol>
+
+          <h3 class="rotulo">Ferramentas</h3>
+          <dl class="ferramentas">
+            <div>
+              <dt>Front-end</dt>
+              <dd>TypeScript, JavaScript, React, HTML5, CSS3, Tailwind CSS, Astro, Chart.js, Recharts</dd>
+            </div>
+            <div>
+              <dt>Qualidade e entrega</dt>
+              <dd>Git e GitHub, GitHub Actions, Vitest, Testing Library, Playwright, Docker, Vercel</dd>
+            </div>
+            <div>
+              <dt>Automação e back-end</dt>
+              <dd>Python, Node.js, PHP, FastAPI, Flask, PostgreSQL, MySQL</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="secao projetos" id="projetos" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <header class="projetos__topo" data-revelar>
+          <p class="rotulo">Projetos</p>
+          <h2 class="titulo-secao" id="titulo-projetos">Primeiro, o que está em uso real.</h2>
+          <p class="projetos__intro">Sites publicados e automações que rodam na rotina de uma empresa vêm antes. Depois, os projetos de portfólio, todos com código aberto. Cada caso mostra o problema, o que eu fiz e o resultado.</p>
+        </header>
+
+        <!-- Os filtros só aparecem com JavaScript ativo; sem ele, todos os projetos ficam visíveis. -->
+        <div class="filtros" role="group" aria-label="Filtrar projetos" hidden>
+          <button class="filtro" type="button" data-filtro="todos" aria-pressed="true">Todos <span class="filtro__qtd">6</span></button>
+          <button class="filtro" type="button" data-filtro="publicado" aria-pressed="false">Publicados <span class="filtro__qtd">2</span></button>
+          <button class="filtro" type="button" data-filtro="interno" aria-pressed="false">Uso interno <span class="filtro__qtd">1</span></button>
+          <button class="filtro" type="button" data-filtro="portfolio" aria-pressed="false">Portfólio <span class="filtro__qtd">3</span></button>
+        </div>
+        <p class="filtros__status sr-only" role="status" aria-live="polite"></p>
+
+        <div class="projetos__grade">
+
+          <!-- 01 · Contelb: site e blog (destaque) -->
+          <article class="projeto projeto--destaque" data-categoria="publicado" aria-labelledby="titulo-contelb">
+            <figure class="projeto__midia">
+              <img src="imagens/projetos/contelb-site.webp" width="1280" height="800" alt="Página inicial do site da Contelb Contabilidade, com o título Contabilidade em Águas Claras e Brasília sobre a foto de um escritório." decoding="async">
+            </figure>
+            <div class="projeto__corpo">
+              <p class="projeto__meta">
+                <span class="projeto__num" aria-hidden="true">01</span>
+                <span class="selo selo--publicado">Publicado</span>
+                <span class="projeto__contexto">Contelb Contabilidade · 2026</span>
+              </p>
+              <h3 class="projeto__titulo" id="titulo-contelb">Contelb Contabilidade: site e blog</h3>
+              <p class="projeto__resumo">Site institucional e blog de um escritório contábil de Brasília, com foco em SEO local e painel próprio para publicar artigos.</p>
+              <dl class="caso">
+                <div class="caso__item">
+                  <dt>Problema</dt>
+                  <dd>O escritório precisava de um site que aparecesse nas buscas locais e de um blog que a própria equipe pudesse atualizar.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>O que fiz</dt>
+                  <dd>Projetei e desenvolvi o site e o blog: páginas por serviço, dados estruturados, sitemap e redirecionamento das URLs antigas. Criei o painel de administração do blog em PHP, com login protegido.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>Resultado</dt>
+                  <dd>Site e blog publicados na KingHost. A equipe cria, edita e publica artigos pelo painel, sem mexer no código.</dd>
+                </div>
+              </dl>
+              <ul class="tags" aria-label="Tecnologias principais">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li>
+              </ul>
+              <p class="projeto__links">
+                <a class="botao botao--primario" href="https://www.contelb.com.br/sobre/" target="_blank" rel="noopener noreferrer">Ver site<svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="sr-only">da Contelb (abre em nova aba)</span></a>
+                <a class="botao botao--secundario" href="https://github.com/GSHolanda/Site_Contelb" target="_blank" rel="noopener noreferrer">Ver código<svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="sr-only">do site da Contelb no GitHub (abre em nova aba)</span></a>
+              </p>
+            </div>
+          </article>
+
+          <!-- 02 · Automações contábeis (uso interno, ilustração genérica) -->
+          <article class="projeto projeto--largo" data-categoria="interno" aria-labelledby="titulo-automacoes">
+            <figure class="projeto__midia projeto__midia--diagrama">
+              <div class="diagrama">
+                <p class="diagrama__titulo">Conversor de extratos</p>
+                <ol class="fluxo">
+                  <li class="fluxo__passo"><span class="fluxo__tipo">Entrada</span>PDF, PDF escaneado, PDF com senha ou OFX</li>
+                  <li class="fluxo__passo"><span class="fluxo__tipo">Leitura</span>Texto extraído, com OCR quando o PDF é imagem</li>
+                  <li class="fluxo__passo"><span class="fluxo__tipo">Saída</span>Planilha Excel conferida</li>
+                  <li class="fluxo__passo fluxo__passo--fim"><span class="fluxo__tipo">Uso</span>Conciliação no sistema Domínio</li>
+                </ol>
+                <p class="diagrama__titulo">Migração de balancetes</p>
+                <ol class="fluxo">
+                  <li class="fluxo__passo"><span class="fluxo__tipo">Entrada</span>Balancetes do sistema antigo</li>
+                  <li class="fluxo__passo"><span class="fluxo__tipo">Python</span>Conversão e conferência</li>
+                  <li class="fluxo__passo fluxo__passo--fim"><span class="fluxo__tipo">Saída</span>Arquivo TXT importável no sistema novo</li>
+                </ol>
+              </div>
+              <figcaption>Ilustração genérica do fluxo. Dados de clientes, arquivos financeiros e código interno não são publicados.</figcaption>
+            </figure>
+            <div class="projeto__corpo">
+              <p class="projeto__meta">
+                <span class="projeto__num" aria-hidden="true">02</span>
+                <span class="selo selo--interno">Uso interno</span>
+                <span class="projeto__contexto">Contelb · 2026</span>
+              </p>
+              <h3 class="projeto__titulo" id="titulo-automacoes">Automações contábeis da Contelb</h3>
+              <p class="projeto__resumo">Duas ferramentas em produção no departamento contábil. Mostro como funcionam, sem expor dados nem código da empresa.</p>
+
+              <div class="exemplos">
+                <section class="exemplo" aria-labelledby="titulo-extratos">
+                  <h4 class="exemplo__titulo" id="titulo-extratos">Conversor de extratos</h4>
+                  <dl class="caso caso--compacto">
+                    <div class="caso__item">
+                      <dt>Problema</dt>
+                      <dd>Cada banco entrega o extrato em um formato, e todos precisam virar planilha para a conciliação bancária no sistema Domínio.</dd>
+                    </div>
+                    <div class="caso__item">
+                      <dt>O que fiz</dt>
+                      <dd>Idealizei e conduzi o desenvolvimento de um programa para Windows que lê extratos de mais de 15 bancos, inclusive PDFs escaneados (com OCR), PDFs com senha e arquivos OFX. Ele tem instalador e atualização automática pela rede da empresa.</dd>
+                    </div>
+                    <div class="caso__item">
+                      <dt>Resultado</dt>
+                      <dd>Planilhas Excel conferidas, prontas para apoiar a conciliação no Domínio.</dd>
+                    </div>
+                  </dl>
+                </section>
+                <section class="exemplo" aria-labelledby="titulo-balancetes">
+                  <h4 class="exemplo__titulo" id="titulo-balancetes">Migração de balancetes</h4>
+                  <dl class="caso caso--compacto">
+                    <div class="caso__item">
+                      <dt>Problema</dt>
+                      <dd>Na troca de sistema contábil, os balancetes precisavam entrar no sistema novo.</dd>
+                    </div>
+                    <div class="caso__item">
+                      <dt>O que fiz</dt>
+                      <dd>Escrevi uma automação em Python que converte os balancetes no arquivo TXT que o sistema novo importa.</dd>
+                    </div>
+                    <div class="caso__item">
+                      <dt>Resultado</dt>
+                      <dd>Automação usada em produção durante a migração de sistema.</dd>
+                    </div>
+                  </dl>
+                </section>
+              </div>
+
+              <ul class="tags" aria-label="Tecnologias principais">
+                <li>Python</li><li>OCR</li><li>OFX</li><li>Excel</li>
+              </ul>
+              <p class="projeto__aviso">Ferramentas internas: sem link público.</p>
+            </div>
+          </article>
+
+          <!-- 03 · Instituto Joãosinho Trinta (projeto profissional) -->
+          <article class="projeto" data-categoria="publicado" aria-labelledby="titulo-joaosinho">
+            <figure class="projeto__midia">
+              <img src="imagens/projetos/joaosinho-trinta.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Página inicial do site do Instituto Joãosinho Trinta, com o título Projetos culturais que viram desenvolvimento e um retrato de Joãosinho Trinta.">
+            </figure>
+            <div class="projeto__corpo">
+              <p class="projeto__meta">
+                <span class="projeto__num" aria-hidden="true">03</span>
+                <span class="selo selo--publicado">Publicado</span>
+                <span class="projeto__contexto">Projeto profissional · Index Participações</span>
+              </p>
+              <h3 class="projeto__titulo" id="titulo-joaosinho">Instituto Joãosinho Trinta</h3>
+              <p class="projeto__resumo">Site institucional de cinco páginas em HTML, CSS e JavaScript puro, com narrativa guiada pela rolagem.</p>
+              <dl class="caso">
+                <div class="caso__item">
+                  <dt>Problema</dt>
+                  <dd>O instituto queria apresentar sua história e sua atuação com uma narrativa visual, sem deixar o site pesado em computadores mais simples.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>O que fiz</dt>
+                  <dd>Desenvolvi as cinco páginas com narrativa guiada pela rolagem, navegação por teclado e suporte à preferência por movimento reduzido. Otimizei com compressão de imagens, <code>content-visibility</code> e um modo de desempenho adaptativo.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>Resultado</dt>
+                  <dd>Carregamento de 25% a 45% mais leve e taxa de quadros de cerca de 28 para 60 fps em hardware simulado de baixo desempenho. Entrega contínua na Vercel, com prévia a cada pull request.</dd>
+                </div>
+              </dl>
+              <ul class="tags" aria-label="Tecnologias principais">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Vercel</li>
+              </ul>
+              <p class="projeto__links">
+                <a class="botao botao--primario" href="https://site-joaosinho-trinta-ubf5.vercel.app/" target="_blank" rel="noopener noreferrer">Ver site<svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="sr-only">do Instituto Joãosinho Trinta (abre em nova aba)</span></a>
+                <a class="botao botao--secundario" href="https://github.com/GSHolanda/Site_joaosinho_trinta" target="_blank" rel="noopener noreferrer">Ver código<svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="sr-only">do site do Instituto Joãosinho Trinta no GitHub (abre em nova aba)</span></a>
+              </p>
+            </div>
+          </article>
+
+          <!-- 04 · LabTrack (portfólio) -->
+          <article class="projeto" data-categoria="portfolio" aria-labelledby="titulo-labtrack">
+            <figure class="projeto__midia">
+              <img src="imagens/projetos/labtrack-dashboard.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Dashboard do LabTrack com indicadores de amostras em aberto, em análise e aguardando revisão, e gráficos de aprovação por semana.">
+            </figure>
+            <div class="projeto__corpo">
+              <p class="projeto__meta">
+                <span class="projeto__num" aria-hidden="true">04</span>
+                <span class="selo selo--portfolio">Portfólio</span>
+                <span class="projeto__contexto">Mini-LIMS</span>
+              </p>
+              <h3 class="projeto__titulo" id="titulo-labtrack">LabTrack</h3>
+              <p class="projeto__resumo">Sistema de gestão de amostras laboratoriais, com dashboard, gráficos e o histórico de cada amostra.</p>
+              <dl class="caso">
+                <div class="caso__item">
+                  <dt>Problema</dt>
+                  <dd>Com dados espalhados em planilhas, um laboratório de controle de qualidade tem dificuldade para saber em que etapa está cada amostra e quem alterou cada resultado.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>O que fiz</dt>
+                  <dd>Construí a interface em React e TypeScript, com React Router, TanStack Query e Recharts, consumindo uma API REST de 55 operações com autenticação JWT e controle de acesso por perfil.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>Resultado</dt>
+                  <dd>Dashboard com gráficos acessíveis e linha do tempo de cada amostra, coberto por 94 testes de interface (Vitest e Testing Library) e integração contínua no GitHub Actions.</dd>
+                </div>
+              </dl>
+              <ul class="tags" aria-label="Tecnologias principais">
+                <li>React</li><li>TypeScript</li><li>API REST</li><li>Recharts</li><li>Vitest</li><li>GitHub Actions</li>
+              </ul>
+              <p class="projeto__links">
+                <a class="botao botao--secundario" href="https://github.com/GSHolanda/labtrack_gerenciamento_de_sistema" target="_blank" rel="noopener noreferrer">Ver código<svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="sr-only">do LabTrack no GitHub (abre em nova aba)</span></a>
+              </p>
+            </div>
+          </article>
+
+          <!-- 05 · PRO-TECH (portfólio) -->
+          <article class="projeto" data-categoria="portfolio" aria-labelledby="titulo-protech">
+            <figure class="projeto__midia">
+              <img src="imagens/projetos/protech.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Página inicial do site da PRO-TECH, com o título Especialistas em Volkswagen e Audi em Brasília e um botão para agendar pelo WhatsApp.">
+            </figure>
+            <div class="projeto__corpo">
+              <p class="projeto__meta">
+                <span class="projeto__num" aria-hidden="true">05</span>
+                <span class="selo selo--portfolio">Portfólio</span>
+                <span class="projeto__contexto">Oficina automotiva</span>
+              </p>
+              <h3 class="projeto__titulo" id="titulo-protech">PRO-TECH</h3>
+              <p class="projeto__resumo">Site institucional para uma oficina especializada em Volkswagen e Audi em Brasília.</p>
+              <dl class="caso">
+                <div class="caso__item">
+                  <dt>Problema</dt>
+                  <dd>A oficina queria aparecer nas buscas locais e receber pedidos de orçamento pelo WhatsApp.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>O que fiz</dt>
+                  <dd>Montei o site com Astro, Tailwind CSS e TypeScript, com páginas geradas a partir de dados tipados e um sistema de design com tokens.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>Resultado</dt>
+                  <dd>Layout responsivo testado com Playwright em seis larguras de tela, acessibilidade WCAG AA e nota 100/100 no Lighthouse.</dd>
+                </div>
+              </dl>
+              <ul class="tags" aria-label="Tecnologias principais">
+                <li>Astro</li><li>Tailwind CSS</li><li>TypeScript</li><li>Playwright</li>
+              </ul>
+              <p class="projeto__links">
+                <a class="botao botao--primario" href="https://site-pro-tech.vercel.app/" target="_blank" rel="noopener noreferrer">Ver demonstração<svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="sr-only">do site da PRO-TECH (abre em nova aba)</span></a>
+                <a class="botao botao--secundario" href="https://github.com/GSHolanda/site_ProTech" target="_blank" rel="noopener noreferrer">Ver código<svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="sr-only">da PRO-TECH no GitHub (abre em nova aba)</span></a>
+              </p>
+            </div>
+          </article>
+
+          <!-- 06 · Dashboard de Análise de Vendas (portfólio) -->
+          <article class="projeto" data-categoria="portfolio" aria-labelledby="titulo-vendas">
+            <figure class="projeto__midia projeto__midia--grafico">
+              <img src="imagens/projetos/vendas-receita-produto.webp" width="1000" height="500" loading="lazy" decoding="async" alt="Gráfico de barras com a receita total por linha de produto. Alimentos e Bebidas aparece com a maior receita.">
+              <figcaption>Gráfico gerado pelo script de análise do repositório.</figcaption>
+            </figure>
+            <div class="projeto__corpo">
+              <p class="projeto__meta">
+                <span class="projeto__num" aria-hidden="true">06</span>
+                <span class="selo selo--portfolio">Portfólio</span>
+                <span class="projeto__contexto">Análise de dados</span>
+              </p>
+              <h3 class="projeto__titulo" id="titulo-vendas">Dashboard de Análise de Vendas</h3>
+              <p class="projeto__resumo">Painel que transforma 1.000 registros de vendas em gráficos interativos.</p>
+              <dl class="caso">
+                <div class="caso__item">
+                  <dt>Problema</dt>
+                  <dd>Responder perguntas de gestão com dados: qual linha de produto gera mais receita, qual filial vende mais e em que horário as pessoas compram.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>O que fiz</dt>
+                  <dd>Criei uma API REST em Flask que consulta o MySQL e devolve um JSON. No front-end, o JavaScript busca esses dados com <code>fetch</code> e monta os gráficos do Chart.js sem recarregar a página. As análises usam Pandas.</dd>
+                </div>
+                <div class="caso__item">
+                  <dt>Resultado</dt>
+                  <dd>Três gráficos interativos: receita por linha de produto, desempenho por filial e volume de vendas por hora.</dd>
+                </div>
+              </dl>
+              <div class="como-funciona">
+                <p class="como-funciona__titulo">Como o front-end conversa com a API</p>
+                <ol class="fluxo fluxo--codigo">
+                  <li class="fluxo__passo"><span class="fluxo__tipo">Navegador</span><code>fetch('/api/dados')</code></li>
+                  <li class="fluxo__passo"><span class="fluxo__tipo">Flask</span>Consulta o MySQL</li>
+                  <li class="fluxo__passo"><span class="fluxo__tipo">JSON</span><code>por_produto</code>, <code>por_filial</code>, <code>por_hora</code></li>
+                  <li class="fluxo__passo fluxo__passo--fim"><span class="fluxo__tipo">Chart.js</span><code>new Chart(...)</code> desenha os gráficos</li>
+                </ol>
+              </div>
+              <ul class="tags" aria-label="Tecnologias principais">
+                <li>JavaScript</li><li>Chart.js</li><li>Flask</li><li>MySQL</li><li>Pandas</li>
+              </ul>
+              <p class="projeto__links">
+                <a class="botao botao--secundario" href="https://github.com/GSHolanda/analise-vendas" target="_blank" rel="noopener noreferrer">Ver código<svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="sr-only">do Dashboard de Análise de Vendas no GitHub (abre em nova aba)</span></a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMAÇÃO ============ -->
+    <section class="secao formacao" id="formacao" aria-labelledby="titulo-formacao">
+      <div class="container">
+        <div class="formacao__topo" data-revelar>
+          <p class="rotulo">Formação</p>
+          <h2 class="titulo-secao" id="titulo-formacao">Graduação em andamento, em paralelo com o trabalho.</h2>
+        </div>
+
+        <ol class="cursos" data-revelar>
+          <li class="curso">
+            <p class="curso__periodo">Desde 2026 · cursando</p>
+            <h3 class="curso__nome">Ciência da Computação</h3>
+            <p class="curso__local">UDF, Brasília/DF</p>
+          </li>
+        </ol>
+
+        <div class="complementos" data-revelar>
+          <div>
+            <h3 class="rotulo">Cursos livres</h3>
+            <ul class="lista-simples">
+              <li><strong>Full Stack Python</strong> · EBAC, 400 h, em andamento</li>
+              <li><strong>Node.js</strong> · Udemy, em andamento</li>
+              <li><strong>Python 3</strong> · Curso em Vídeo, 120 h, concluído</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="rotulo">Idiomas</h3>
+            <ul class="lista-simples">
+              <li><strong>Português</strong> · nativo</li>
+              <li><strong>Inglês</strong> · intermediário (leitura, escrita e conversação básica)</li>
+              <li><strong>Espanhol</strong> · básico</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="secao contato" id="contato" aria-labelledby="titulo-contato">
+      <div class="container contato__grade" data-revelar>
+        <div>
+          <p class="rotulo">Contato</p>
+          <h2 class="titulo-secao titulo-secao--grande" id="titulo-contato">Quer conversar sobre um projeto ou uma vaga?</h2>
+          <p class="contato__texto">O jeito mais rápido de falar comigo é pelo LinkedIn. O código do que está aqui fica no GitHub.</p>
+          <p class="contato__cidade"><span class="rotulo">Base</span> Brasília, DF</p>
+        </div>
+        <ul class="contato__links">
+          <li>
+            <a class="canal" href="https://www.linkedin.com/in/gabrielholanda-dev/" target="_blank" rel="noopener noreferrer">
+              <span class="canal__nome">LinkedIn</span>
+              <span class="canal__endereco">linkedin.com/in/gabrielholanda-dev</span>
+              <svg class="canal__seta" aria-hidden="true" viewBox="0 0 16 16" width="22" height="22"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+              <span class="sr-only">(abre em nova aba)</span>
+            </a>
+          </li>
+          <li>
+            <a class="canal" href="https://github.com/GSHolanda" target="_blank" rel="noopener noreferrer">
+              <span class="canal__nome">GitHub</span>
+              <span class="canal__endereco">github.com/GSHolanda</span>
+              <svg class="canal__seta" aria-hidden="true" viewBox="0 0 16 16" width="22" height="22"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+              <span class="sr-only">(abre em nova aba)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <p>© 2026 Gabriel Silva Holanda · Brasília, DF</p>
+      <p>Projeto Final A1 · Prof. Eliel Cruz · HTML, CSS e JavaScript puro, publicado no GitHub Pages.</p>
+      <p><a class="rodape__topo" href="#inicio">Voltar ao topo</a></p>
+    </div>
+  </footer>
+</body>
+</html>
