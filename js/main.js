@@ -1,21 +1,56 @@
 /* ==========================================================================
    Portfólio · Gabriel Silva Holanda
+   0. Tema claro (padrão) ou escuro, lembrado no navegador
    1. Menu móvel acessível
    2. Filtros de projetos (Todos, Publicados, Uso interno, Portfólio)
    3. Realce do link da seção visível
    4. Revelação suave ao rolar
-   Sem JavaScript, o menu fica aberto e todos os projetos ficam visíveis.
+   Sem JavaScript, o site fica no tema claro, o menu fica aberto e todos os projetos ficam visíveis.
    ========================================================================== */
 
-// Marca a página como "com JavaScript" antes da primeira pintura.
-document.documentElement.classList.add('js');
+var CHAVE_TEMA = 'portfolio-tema';
+
+// Roda antes da primeira pintura: marca a página como "com JavaScript" e aplica o tema salvo.
+(function () {
+  var raiz = document.documentElement;
+  raiz.classList.add('js');
+  var salvo = null;
+  try { salvo = window.localStorage.getItem(CHAVE_TEMA); } catch (erro) { /* armazenamento bloqueado: segue no claro */ }
+  if (salvo === 'escuro') raiz.setAttribute('data-tema', 'escuro');
+})();
 
 document.addEventListener('DOMContentLoaded', function () {
+  iniciarTema();
   iniciarMenu();
   iniciarFiltros();
   iniciarNavegacaoAtiva();
   iniciarRevelacao();
 });
+
+/* ---------- 0. Tema ---------- */
+function iniciarTema() {
+  var botao = document.querySelector('.tema-botao');
+  if (!botao) return;
+  var raiz = document.documentElement;
+  var corBarra = document.querySelector('meta[name="theme-color"]');
+
+  function aplicar(escuro, salvar) {
+    if (escuro) raiz.setAttribute('data-tema', 'escuro');
+    else raiz.removeAttribute('data-tema');
+    botao.setAttribute('aria-pressed', String(escuro));
+    botao.setAttribute('title', escuro ? 'Voltar ao tema claro' : 'Ativar tema escuro');
+    if (corBarra) corBarra.setAttribute('content', escuro ? '#15171c' : '#f4f4f1');
+    if (salvar) {
+      try { window.localStorage.setItem(CHAVE_TEMA, escuro ? 'escuro' : 'claro'); } catch (erro) { /* sem armazenamento */ }
+    }
+  }
+
+  aplicar(raiz.getAttribute('data-tema') === 'escuro', false);
+  botao.hidden = false;
+  botao.addEventListener('click', function () {
+    aplicar(botao.getAttribute('aria-pressed') !== 'true', true);
+  });
+}
 
 /* ---------- 1. Menu móvel ---------- */
 function iniciarMenu() {
