@@ -28,8 +28,8 @@
   --barra-texto: #e8e9ee;
   --ponto: rgba(23, 23, 31, 0.07);
 
-  --fonte-pixel: "Pixelify Sans", "Trebuchet MS", system-ui, sans-serif;
-  --fonte-rotulo: "Silkscreen", "Courier New", ui-monospace, monospace;
+  --fonte-pixel: "VT323", "Courier New", ui-monospace, monospace;
+  --fonte-rotulo: "VT323", "Courier New", ui-monospace, monospace;
   --fonte-texto: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --fonte-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
 
@@ -96,6 +96,7 @@ body {
 }
 
 h1, h2, h3, h4, p, ul, ol, dl, dd, figure { margin: 0; }
+h1, h2, h3, h4 { font-synthesis: none; }
 ul, ol { padding: 0; list-style: none; }
 img { display: block; max-width: 100%; height: auto; }
 [hidden] { display: none !important; }
@@ -138,6 +139,7 @@ code {
 
 .pular {
   position: absolute;
+  font-size: 1.3rem;
   left: 16px;
   top: -120px;
   z-index: 100;
@@ -152,7 +154,7 @@ code {
 
 .rotulo {
   font-family: var(--fonte-rotulo);
-  font-size: 0.82rem;
+  font-size: 1.25rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--texto-3);
@@ -181,8 +183,8 @@ code {
   max-width: 22ch;
   margin-top: 14px;
   font-family: var(--fonte-pixel);
-  font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3.1rem);
-  font-weight: 600;
+  font-size: clamp(2.3rem, 1.5rem + 3.2vw, 3.9rem);
+  font-weight: 400;
   line-height: 1.1;
   text-wrap: balance;
 }
@@ -196,7 +198,7 @@ code {
   padding: 0 20px;
   border: 2px solid var(--borda);
   font-family: var(--fonte-rotulo);
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.1;
   white-space: nowrap;
   text-transform: uppercase;
@@ -248,13 +250,13 @@ code {
   background: var(--azul-botao);
   box-shadow: 2px 2px 0 var(--sombra-botao);
   font-family: var(--fonte-rotulo);
-  font-size: 0.85rem;
+  font-size: 1.15rem;
   color: #fff;
 }
 .marca__nome {
   font-family: var(--fonte-pixel);
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.65rem;
+  font-weight: 400;
   white-space: nowrap;
 }
 
@@ -290,7 +292,7 @@ code {
   box-shadow: 3px 3px 0 var(--sombra-botao);
   color: var(--texto);
   font-family: var(--fonte-rotulo);
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -430,9 +432,9 @@ code {
 .hero__nome {
   margin-top: 18px;
   font-family: var(--fonte-pixel);
-  font-size: clamp(2.8rem, 1.5rem + 5.6vw, 6rem);
-  font-weight: 700;
-  line-height: 0.98;
+  font-size: clamp(3.4rem, 1.9rem + 6.6vw, 7.4rem);
+  font-weight: 400;
+  line-height: 0.92;
   text-wrap: balance;
 }
 
@@ -497,7 +499,7 @@ code {
   border: 2px solid var(--borda);
   background: var(--amarelo);
   font-family: var(--fonte-rotulo);
-  font-size: 0.82rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #17171f;
@@ -505,8 +507,8 @@ code {
 .jogador__nome {
   margin-top: 10px;
   font-family: var(--fonte-pixel);
-  font-size: 1.55rem;
-  font-weight: 600;
+  font-size: 1.95rem;
+  font-weight: 400;
   line-height: 1.1;
 }
 .jogador__local {
@@ -533,8 +535,8 @@ code {
 .stats__item:last-child { padding-bottom: 0; border-bottom: 0; }
 .stats__valor {
   font-family: var(--fonte-pixel);
-  font-size: clamp(1.8rem, 1.5rem + 1.2vw, 2.3rem);
-  font-weight: 600;
+  font-size: clamp(2.3rem, 1.9rem + 1.5vw, 2.9rem);
+  font-weight: 400;
   line-height: 1;
 }
 .stats dd {
@@ -575,7 +577,7 @@ code {
 .retrato figcaption {
   margin-top: 14px;
   font-family: var(--fonte-rotulo);
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   color: var(--texto-3);
 }
@@ -610,7 +612,7 @@ code {
 .ferramentas { display: grid; gap: 16px; }
 .ferramentas dt {
   font-family: var(--fonte-rotulo);
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   text-transform: uppercase;
 }
 .ferramentas dd { font-size: 0.95rem; color: var(--texto-2); }
@@ -639,7 +641,7 @@ code {
   box-shadow: 3px 3px 0 var(--sombra-botao);
   color: var(--texto);
   font-family: var(--fonte-rotulo);
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: transform 0.08s ease, box-shadow 0.08s ease;
@@ -750,7 +752,7 @@ code {
 }
 .projeto__num {
   font-family: var(--fonte-rotulo);
-  font-size: 0.85rem;
+  font-size: 1.1rem;
 }
 .projeto__contexto { font-family: var(--fonte-mono); font-size: 0.78rem; }
 
@@ -760,7 +762,7 @@ code {
   padding: 2px 8px;
   border: 2px solid var(--borda);
   font-family: var(--fonte-rotulo);
-  font-size: 0.75rem;
+  font-size: 1.08rem;
   text-transform: uppercase;
   color: var(--texto);
 }
@@ -770,8 +772,8 @@ code {
 
 .projeto__titulo {
   font-family: var(--fonte-pixel);
-  font-size: clamp(1.55rem, 1.25rem + 1vw, 2.05rem);
-  font-weight: 600;
+  font-size: clamp(1.95rem, 1.6rem + 1.2vw, 2.6rem);
+  font-weight: 400;
   line-height: 1.12;
 }
 .projeto__resumo { max-width: 60ch; color: var(--texto-2); }
@@ -785,7 +787,7 @@ code {
 .caso__item { display: grid; align-content: start; gap: 4px; }
 .caso dt {
   font-family: var(--fonte-rotulo);
-  font-size: 0.75rem;
+  font-size: 1.12rem;
   text-transform: uppercase;
   color: var(--texto-3);
 }
@@ -835,7 +837,7 @@ code {
 .diagrama__titulo,
 .como-funciona__titulo {
   font-family: var(--fonte-rotulo);
-  font-size: 0.75rem;
+  font-size: 1.12rem;
   text-transform: uppercase;
   color: var(--texto-3);
 }
@@ -879,7 +881,7 @@ code {
   display: block;
   margin-bottom: 2px;
   font-family: var(--fonte-rotulo);
-  font-size: 0.7rem;
+  font-size: 1.02rem;
   text-transform: uppercase;
   color: var(--texto-3);
 }
@@ -894,8 +896,8 @@ code {
 .exemplos { display: grid; gap: 28px; }
 .exemplo__titulo {
   font-family: var(--fonte-pixel);
-  font-size: 1.35rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: 400;
   line-height: 1.2;
 }
 .exemplo .caso { margin-top: 12px; }
@@ -918,8 +920,8 @@ code {
 }
 .curso__nome {
   font-family: var(--fonte-pixel);
-  font-size: clamp(1.4rem, 1.15rem + 1vw, 1.95rem);
-  font-weight: 600;
+  font-size: clamp(1.75rem, 1.4rem + 1.3vw, 2.4rem);
+  font-weight: 400;
   line-height: 1.2;
 }
 .curso__local { color: var(--texto-2); }
@@ -957,7 +959,7 @@ code {
 }
 .titulo-secao--grande {
   max-width: 16ch;
-  font-size: clamp(2.2rem, 1.4rem + 3.6vw, 4.2rem);
+  font-size: clamp(2.7rem, 1.7rem + 4.4vw, 5.2rem);
 }
 .contato__texto {
   max-width: 46ch;
@@ -1005,8 +1007,8 @@ code {
 .canal__nome {
   grid-area: nome;
   font-family: var(--fonte-pixel);
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 400;
   line-height: 1.2;
 }
 .canal__endereco {
@@ -1122,7 +1124,7 @@ code {
   .projeto--destaque .janela { border-bottom: 0; }
   .projeto--destaque .janela img { aspect-ratio: 2.2 / 1; }
   .projeto--destaque .projeto__corpo { padding: 40px 44px 44px; gap: 22px; }
-  .projeto--destaque .projeto__titulo { font-size: clamp(2rem, 1.3rem + 1.6vw, 2.8rem); }
+  .projeto--destaque .projeto__titulo { font-size: clamp(2.5rem, 1.7rem + 2vw, 3.4rem); }
   .projeto--destaque .projeto__resumo { font-size: 1.12rem; }
   .projeto--destaque .caso {
     grid-template-columns: repeat(3, minmax(0, 1fr));
