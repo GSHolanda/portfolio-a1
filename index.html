@@ -6,10 +6,9 @@
   <title>Gabriel Silva Holanda · Desenvolvedor Front-End</title>
   <meta name="description" content="Portfólio de Gabriel Silva Holanda, desenvolvedor front-end em Brasília. Interfaces responsivas e acessíveis, sites publicados e automações para rotinas de trabalho.">
   <meta name="author" content="Gabriel Silva Holanda">
-  <meta name="theme-color" content="#f4f4f1">
+  <meta name="theme-color" content="#f6f5f0">
   <link rel="canonical" href="https://gsholanda.github.io/portfolio-a1/">
 
-  <!-- Compartilhamento (Open Graph): URLs absolutas do GitHub Pages -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Gabriel Silva Holanda · Desenvolvedor Front-End">
@@ -25,10 +24,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Pixelify+Sans:wght@500;600;700&family=Silkscreen&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Script pequeno e sem defer: aplica o tema salvo e marca a página como "com JavaScript" antes da pintura. -->
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -56,10 +54,9 @@
         </ul>
       </nav>
 
-      <!-- O botão de tema só aparece com JavaScript ativo. -->
       <button class="tema-botao" type="button" aria-pressed="false" title="Ativar tema escuro" hidden>
-        <svg class="tema-botao__lua" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-        <svg class="tema-botao__sol" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="tema-botao__lua" aria-hidden="true" viewBox="0 0 12 12" width="18" height="18" shape-rendering="crispEdges"><path fill="currentColor" d="M4 1h4v1H4zM2 2h3v1H2zM1 3h3v2H1zM0 5h3v2H0zM1 7h3v2H1zM2 9h3v1H2zM4 10h4v1H4zM8 9h2v1H8zM9 8h2v1H9zM6 9h2v1H6z"/></svg>
+        <svg class="tema-botao__sol" aria-hidden="true" viewBox="0 0 12 12" width="18" height="18" shape-rendering="crispEdges"><path fill="currentColor" d="M4 3h4v6H4zM3 4h6v4H3zM5 0h2v2H5zM5 10h2v2H5zM0 5h2v2H0zM10 5h2v2h-2zM1 1h2v2H1zM9 1h2v2H9zM1 9h2v2H1zM9 9h2v2H9z"/></svg>
         <span class="sr-only">Tema escuro</span>
       </button>
     </div>
@@ -67,37 +64,55 @@
 
   <main id="conteudo" tabindex="-1">
 
-    <!-- ============ INÍCIO ============ -->
     <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="cenario" aria-hidden="true">
+        <span class="nuvem nuvem--1"></span>
+        <span class="nuvem nuvem--2"></span>
+        <span class="nuvem nuvem--3"></span>
+        <span class="estrela estrela--1"></span>
+        <span class="estrela estrela--2"></span>
+        <span class="estrela estrela--3"></span>
+        <span class="estrela estrela--4"></span>
+        <span class="estrela estrela--5"></span>
+      </div>
+
       <div class="container hero__grade">
         <div class="hero__texto">
-          <p class="rotulo hero__rotulo"><img class="hero__avatar" src="imagens/perfil/gabriel-holanda.webp" width="44" height="44" alt="" decoding="async">Portfólio · Brasília, DF</p>
+          <p class="rotulo">Portfólio · Brasília, DF</p>
           <h1 class="hero__nome" id="titulo-inicio">Gabriel Silva Holanda</h1>
-          <p class="hero__cargo">Desenvolvedor Front-End</p>
+          <p class="hero__cargo">Desenvolvedor Front-End<span class="cursor" aria-hidden="true"></span></p>
           <p class="hero__frase">Desenvolvo interfaces responsivas e acessíveis e crio automações que tiram o trabalho repetitivo da rotina das empresas.</p>
           <div class="hero__acoes">
-            <a class="botao botao--primario" href="#projetos">Ver projetos</a>
+            <a class="botao botao--primario botao--start" href="#projetos">Ver projetos</a>
             <a class="botao botao--secundario" href="https://github.com/GSHolanda" target="_blank" rel="noopener noreferrer">
               GitHub
-              <svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              <svg class="icone" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="M5 3h8v8M13 3 3 13" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
               <span class="sr-only">(abre em nova aba)</span>
             </a>
           </div>
         </div>
 
-        <aside class="ficha" aria-labelledby="titulo-ficha" data-revelar>
-          <h2 class="ficha__titulo rotulo" id="titulo-ficha">Em números</h2>
-          <dl class="ficha__lista">
-            <div class="ficha__item">
-              <dt class="ficha__valor">15+</dt>
+        <aside class="jogador" aria-labelledby="titulo-jogador" data-revelar>
+          <div class="jogador__topo">
+            <img class="jogador__avatar" src="imagens/pixel/avatar-gabriel.webp" width="600" height="750" alt="Retrato em pixel art de Gabriel Silva Holanda.">
+            <div class="jogador__info">
+              <h2 class="jogador__tag" id="titulo-jogador">Player 1<span class="sr-only">: em números</span></h2>
+              <p class="jogador__nome">Gabriel Holanda</p>
+              <p class="jogador__local">Brasília, DF</p>
+              <p class="jogador__vidas" aria-hidden="true"><span></span><span></span><span></span></p>
+            </div>
+          </div>
+          <dl class="stats">
+            <div class="stats__item">
+              <dt class="stats__valor">15+</dt>
               <dd>bancos lidos pelo programa de extratos que idealizei na Contelb</dd>
             </div>
-            <div class="ficha__item">
-              <dt class="ficha__valor">28 <span aria-hidden="true">→</span><span class="sr-only">para</span> 60 fps</dt>
+            <div class="stats__item">
+              <dt class="stats__valor">28 <span aria-hidden="true">→</span><span class="sr-only">para</span> 60 fps</dt>
               <dd>no site do Instituto Joãosinho Trinta, em hardware simulado de baixo desempenho</dd>
             </div>
-            <div class="ficha__item">
-              <dt class="ficha__valor">94</dt>
+            <div class="stats__item">
+              <dt class="stats__valor">94</dt>
               <dd>testes de interface no front-end do LabTrack</dd>
             </div>
           </dl>
@@ -105,11 +120,10 @@
       </div>
     </section>
 
-    <!-- ============ SOBRE ============ -->
     <section class="secao sobre" id="sobre" aria-labelledby="titulo-sobre">
       <div class="container sobre__grade">
         <div class="sobre__texto" data-revelar>
-          <p class="rotulo">Sobre mim</p>
+          <p class="rotulo rotulo--seta">Sobre mim</p>
           <h2 class="titulo-secao" id="titulo-sobre">Interface boa resolve o problema de alguém. Eu gosto de medir se resolveu.</h2>
           <p>Sou de Brasília e curso Ciência da Computação na UDF. No dia a dia trabalho com React e TypeScript, HTML, CSS e JavaScript, integro interfaces a APIs REST e escrevo automações em Python quando uma tarefa se repete demais.</p>
           <p>Na Contelb, escritório de contabilidade em Brasília, meu trabalho parte da rotina do departamento contábil. Idealizei um programa para Windows que lê extratos de mais de 15 bancos, gera planilhas Excel conferidas e apoia a conciliação no sistema Domínio. Na troca de sistema do escritório, automatizei em Python a migração dos balancetes. Também projetei o site e o blog novos, pensados para quem procura contabilidade na cidade.</p>
@@ -156,16 +170,14 @@
       </div>
     </section>
 
-    <!-- ============ PROJETOS ============ -->
     <section class="secao projetos" id="projetos" aria-labelledby="titulo-projetos">
       <div class="container">
         <header class="projetos__topo" data-revelar>
-          <p class="rotulo">Projetos</p>
+          <p class="rotulo rotulo--seta">Projetos</p>
           <h2 class="titulo-secao" id="titulo-projetos">Primeiro, o que está em uso real.</h2>
           <p class="projetos__intro">Sites publicados e automações que rodam na rotina de uma empresa vêm antes. Depois, os projetos de portfólio, todos com código aberto. Cada caso mostra o problema, o que eu fiz e o resultado.</p>
         </header>
 
-        <!-- Os filtros só aparecem com JavaScript ativo; sem ele, todos os projetos ficam visíveis. -->
         <div class="filtros" role="group" aria-label="Filtrar projetos" hidden>
           <button class="filtro" type="button" data-filtro="todos" aria-pressed="true">Todos <span class="filtro__qtd">6</span></button>
           <button class="filtro" type="button" data-filtro="publicado" aria-pressed="false">Publicados <span class="filtro__qtd">1</span></button>
@@ -176,7 +188,6 @@
 
         <div class="projetos__grade">
 
-          <!-- 01 · Contelb: site e blog (destaque) -->
           <article class="projeto projeto--destaque" data-categoria="publicado" aria-labelledby="titulo-contelb">
             <figure class="projeto__midia projeto__midia--janela">
               <div class="janela">
@@ -216,7 +227,6 @@
             </div>
           </article>
 
-          <!-- 02 · Automações contábeis (uso interno, ilustração genérica) -->
           <article class="projeto projeto--largo" data-categoria="interno" aria-labelledby="titulo-automacoes">
             <figure class="projeto__midia projeto__midia--diagrama">
               <div class="diagrama">
@@ -289,7 +299,6 @@
             </div>
           </article>
 
-          <!-- 03 · Instituto Joãosinho Trinta (projeto profissional) -->
           <article class="projeto" data-categoria="portfolio" aria-labelledby="titulo-joaosinho">
             <figure class="projeto__midia projeto__midia--janela">
               <div class="janela">
@@ -329,7 +338,6 @@
             </div>
           </article>
 
-          <!-- 04 · LabTrack (portfólio) -->
           <article class="projeto" data-categoria="portfolio" aria-labelledby="titulo-labtrack">
             <figure class="projeto__midia projeto__midia--janela">
               <div class="janela">
@@ -368,7 +376,6 @@
             </div>
           </article>
 
-          <!-- 05 · PRO-TECH (portfólio) -->
           <article class="projeto" data-categoria="portfolio" aria-labelledby="titulo-protech">
             <figure class="projeto__midia projeto__midia--janela">
               <div class="janela">
@@ -408,7 +415,6 @@
             </div>
           </article>
 
-          <!-- 06 · Dashboard de Análise de Vendas (portfólio) -->
           <article class="projeto" data-categoria="portfolio" aria-labelledby="titulo-vendas">
             <figure class="projeto__midia projeto__midia--grafico projeto__midia--janela">
               <div class="janela">
@@ -461,11 +467,10 @@
       </div>
     </section>
 
-    <!-- ============ FORMAÇÃO ============ -->
     <section class="secao formacao" id="formacao" aria-labelledby="titulo-formacao">
       <div class="container">
         <div class="formacao__topo" data-revelar>
-          <p class="rotulo">Formação</p>
+          <p class="rotulo rotulo--seta">Formação</p>
           <h2 class="titulo-secao" id="titulo-formacao">Graduação em andamento, em paralelo com o trabalho.</h2>
         </div>
 
@@ -498,11 +503,10 @@
       </div>
     </section>
 
-    <!-- ============ CONTATO ============ -->
     <section class="secao contato" id="contato" aria-labelledby="titulo-contato">
       <div class="container contato__grade" data-revelar>
         <div>
-          <p class="rotulo">Contato</p>
+          <p class="rotulo rotulo--seta">Contato</p>
           <h2 class="titulo-secao titulo-secao--grande" id="titulo-contato">Quer conversar sobre um projeto ou uma vaga?</h2>
           <p class="contato__texto">O jeito mais rápido de falar comigo é pelo LinkedIn. O código do que está aqui fica no GitHub.</p>
           <p class="contato__cidade"><span class="rotulo">Base</span> Brasília, DF</p>

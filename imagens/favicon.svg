@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#15171c"/>
-  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#2a62dc" stroke-width="3"/>
-  <text x="32" y="41" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="26" font-weight="700" fill="#6ea2ff">GH</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <rect width="16" height="16" fill="#17171f"/>
+  <rect x="1" y="1" width="14" height="14" fill="#2450e0"/>
+  <path fill="#ffffff" d="M3 4h3v1H3zM2 5h1v5H2zM4 7h3v1H4zM6 8h1v2H6zM3 10h3v1H3z"/>
+  <path fill="#ffd23f" d="M9 4h1v7H9zM13 4h1v7h-1zM10 7h3v1h-3z"/>
 </svg>
